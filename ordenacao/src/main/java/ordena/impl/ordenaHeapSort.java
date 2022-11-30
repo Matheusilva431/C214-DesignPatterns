@@ -1,7 +1,6 @@
 package ordena.impl;
 
 import iOrdenar;
-
 public class ordenaHeapSort implements iOrdenar{
     @Override
     public int[] ordena(int[] vetor) {
