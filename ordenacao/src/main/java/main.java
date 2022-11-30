@@ -25,7 +25,7 @@ public class main {
         while (op != 4){
             System.out.print("Opções\n 1- Bubble Sort\n 2- Merge Sort\n 3- Heap Sort\n 4- Sair\nEscolha qual ordenação deseja: ");
             op = input.nextInt();
-            if (op == 4) {
+            if (op < 1 || op > 3) {
                 break;
             }
             System.out.print("Opções\n 1- Escolher valor do vetor\n 2- Valor padrão/escolhido anteriormente\nEscolha qual ordenação deseja: ");
