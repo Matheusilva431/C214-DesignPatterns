@@ -8,6 +8,7 @@ public class main {
         Scanner input = new Scanner(System.in);
         int vetor[] = new int[8];
         int op = -1;
+        int op2 = -1;
         int arr[] = new int[8];
         vetor[0] = 1;
         vetor[1] = 2;
@@ -21,6 +22,16 @@ public class main {
         while (op != 4){
             System.out.print("Opções\n 1- Bubble Sort\n 2- Merge Sort\n 3- Heap Sort\n 4- Sair\nEscolha qual ordenação deseja: ");
             op = input.nextInt();
+            System.out.print("Opções\n 1- Escolher valor do vetor\n 2- Valor padrão/escolhido anteriormente\nEscolha qual ordenação deseja: ");
+            op2 = input.nextInt();
+            if(op2 == 1){
+                for (int i = 0; i < arr.length; i++) {
+                    System.out.print("Posicao ");
+                    System.out.print(i);
+                    System.out.print(": ");
+                    vetor[i] = input.nextInt();
+                }
+            }
             if(op == 1) {
                 ordenacaoBubbleSort ord = new ordenacaoBubbleSort();
                 arr = ord.Ordenar(vetor);
