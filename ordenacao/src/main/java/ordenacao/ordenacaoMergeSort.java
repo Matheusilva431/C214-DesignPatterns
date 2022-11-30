@@ -1,11 +1,11 @@
 package ordenacao;
 
-import ordenacao.ordena.impl.ordenaHeapSort;
+import ordenacao.ordena.impl.ordenaMergeSort;
 
 public class ordenacaoMergeSort extends Ordenar {
 
     public ordenacaoMergeSort(){
-        ordenar = new ordenaHeapSort();
+        ordenar = new ordenaMergeSort();
     }
 
 }
