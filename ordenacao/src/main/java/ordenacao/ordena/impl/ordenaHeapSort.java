@@ -1,6 +1,6 @@
-package ordena.impl;
+package ordenacao.ordena.impl;
 
-import iOrdenar;
+import ordenacao.iOrdenar;
 public class ordenaHeapSort implements iOrdenar{
     @Override
     public int[] ordena(int[] vetor) {

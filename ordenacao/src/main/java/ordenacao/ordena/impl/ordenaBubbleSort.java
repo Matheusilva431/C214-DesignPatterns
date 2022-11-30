@@ -1,6 +1,6 @@
-package ordena.impl;
+package ordenacao.ordena.impl;
 
-import iOrdenar;
+import ordenacao.iOrdenar;
 
 public class ordenaBubbleSort implements iOrdenar {
 
@@ -8,7 +8,6 @@ public class ordenaBubbleSort implements iOrdenar {
     public int[] ordena(int[] vetor) {
         int n = vetor.length;
         int temp = 0;
-        boolean mod = false;
 
         for(int i=0; i < n; i++){
             for(int j=1; j < (n-i); j++){
@@ -16,13 +15,8 @@ public class ordenaBubbleSort implements iOrdenar {
                     temp = vetor[j-1];
                     vetor[j-1] = vetor[j];
                     vetor[j] = temp;
-                    mod = true;
-                }
-                if (!mod) {
-                    return vetor;
                 }
             }
-            mod = false;
         }
         return vetor;
     }

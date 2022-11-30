@@ -4,18 +4,21 @@
   <groupId>br.inatel.matheus.ordenacao</groupId>
   <artifactId>ordenacao</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>6</source>
-          <target>6</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-  <name>Archetype - ordenacao</name>
+  <properties>
+    <maven.compiler.source>18</maven.compiler.source>
+    <maven.compiler.target>18</maven.compiler.target>
+  </properties>
+  <name>Archetype - tranalhoPratico</name>
   <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
 </project>

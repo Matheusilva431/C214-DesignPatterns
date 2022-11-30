@@ -1,3 +1,5 @@
+package ordenacao;
+
 public abstract class Ordenar {
 
     protected iOrdenar ordenar;
@@ -8,5 +10,9 @@ public abstract class Ordenar {
 
     public void setOrdenar(iOrdenar ordenar) {
         this.ordenar = ordenar;
+    }
+
+    public int[] Ordenar(int[] vetor){
+        return ordenar.ordena(vetor);
     }
 }
